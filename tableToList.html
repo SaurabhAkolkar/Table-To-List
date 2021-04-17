@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jquery Table To List :</title>
+    <meta name="description" content="convert table to list">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="parent" class="container mt-5">
+        <h4>Jquery Table Convert to List In Medium Device :</h4>
+        <h4>Change Size To See Change :</h4>
+        <table class="table table-bordered mt-3" id="table_id">
+            <thead>
+                <tr>
+                    <th style="width: 10px">ID</th>
+                    <th>Task</th>
+                    <th>Progress</th>
+                    <th style="width: 40px">Label</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Update software</td>
+                    <td>55</td>
+                    <td>Modrate</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Clean database</td>
+                    <td>70</td>
+                    <td>Good</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Cron job running</td>
+                    <td>30</td>
+                    <td>Not Bad</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Fix and squish bugs</td>
+                    <td>90</td>
+                    <td>Excellent</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <!--  jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <!-- Table To List Must To Include -->
+    <script src="tableToList.js"></script>
+    <script>
+        $(function() {
+            getList('#table_id', '#parent');
+        });
+    </script>
+</body>
+
+</html>
